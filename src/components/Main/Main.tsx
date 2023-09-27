@@ -42,7 +42,7 @@ export const Main = () => {
                 className={styles.textInput}
               />
             </div>
-            <input type="submit" className={styles.submitButton} />
+            <input type="submit" className={styles.submitButton} value="Отправить заявку"/>
           </form>
         </div>
       </section>
