@@ -1,8 +1,14 @@
+"use client";
+
 import React from "react";
 import styles from "./Main.module.css";
 import Image from "next/image";
+import { InputMask } from "primereact/inputmask";
+import { useState } from "react";
 
 export const Main = () => {
+  let [phoneNumber, setPhoneNumber] = useState("");
+
   return (
     <main id={"main"} className={styles.container}>
       <section className={styles.applicationForm}>
@@ -35,14 +41,21 @@ export const Main = () => {
                 maxLength={32}
                 className={styles.textInput}
               />
-              <input
+              <InputMask
                 type="tel"
+                value={phoneNumber}
+                onChange={(event) => setPhoneNumber(String(event.target.value))}
+                mask="+7 999 999 - 99 - 99"
+                
                 placeholder="+7 ___ ___ - __ - __"
-                maxLength={12}
                 className={styles.textInput}
               />
             </div>
-            <input type="submit" className={styles.submitButton} value="Отправить заявку"/>
+            <input
+              type="submit"
+              className={styles.submitButton}
+              value="Отправить заявку"
+            />
           </form>
         </div>
       </section>

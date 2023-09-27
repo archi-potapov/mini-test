@@ -66,6 +66,9 @@
   outline: none;
   border: 1px solid black;
 }
+.textInput::placeholder {
+  color: black;
+}
 .submitButton {
   border-radius: 10px;
   background-color: black;
