@@ -1,29 +1,26 @@
-"use client";
-
 import React from "react";
-import styles from "./Main.module.css";
 import Image from "next/image";
-import { InputMask } from "primereact/inputmask";
-import { useState } from "react";
+import { Input } from "./Input/Input";
 
 export const Main = () => {
-  let [phoneNumber, setPhoneNumber] = useState("");
-
   return (
-    <main id={"main"} className={styles.container}>
-      <section className={styles.applicationForm}>
-        <div className={styles.photoWrapper}>
+    <main
+      id={"main"}
+      className="mb-[202px] w-full max-w-[1828px] px-[46px] max-md:mb-[60px] max-md:px-[10px]"
+    >
+      <section className="flex w-full justify-between overflow-hidden rounded-[10px] bg-[#E7E7E7]">
+        <div className="flex w-[680px] items-end bg-[#0a0b0d] max-xl:hidden">
           <Image
-            src="/images/authorPhoto.jpg"
+            src="/images/authorPhoto.png"
             alt="Author Photo"
             width={525}
             height={687}
           />
         </div>
-        <div className={styles.formWrapper}>
-          <h2 className={styles.aboutText}>
+        <div className="flex w-auto grow flex-col gap-[112px] p-[142px_56px] max-md:gap-[20px] max-md:p-[40px_15px]">
+          <h2 className="max-w-[808px] text-[36px] leading-[1em] tracking-[-0.01em] text-black max-md:text-[21px] max-lg:max-w-[87%]">
             Если у вас есть{" "}
-            <span className={styles.aboutTextHighlighting}>
+            <span className="text-gray-selection">
               общий запрос или запрос по проекту, пожалуйста, напишите мне
             </span>{" "}
             по электронной почте или заполните форму — доступна сейчас.
@@ -32,30 +29,15 @@ export const Main = () => {
             action=""
             name="application form"
             autoComplete="on"
-            className={styles.form}
+            className="flex flex-col gap-[56px] text-black max-md:gap-[10px]"
           >
-            <div className={styles.inputsWrapper}>
-              <input
-                type="text"
-                placeholder="Стас Васильев"
-                maxLength={32}
-                className={styles.textInput}
-              />
-              <InputMask
-                type="tel"
-                value={phoneNumber}
-                onChange={(event) => setPhoneNumber(String(event.target.value))}
-                mask="+7 999 999 - 99 - 99"
-                
-                placeholder="+7 ___ ___ - __ - __"
-                className={styles.textInput}
-              />
+            <div className="flex w-full justify-between gap-[10px] max-md:flex-col max-md:gap-[10px]">
+              <Input type="name" />
+              <Input type="tel" />
             </div>
-            <input
-              type="submit"
-              className={styles.submitButton}
-              value="Отправить заявку"
-            />
+            <button className="h-[78px] w-full rounded-[10px] bg-black p-[12px_16px] text-[21px] leading-[1em] tracking-[-0.21px] text-white max-md:h-[58px] max-md:text-[14px] max-md:tracking-[-0.14px]">
+              Отправить заявку
+            </button>
           </form>
         </div>
       </section>
