@@ -21,6 +21,7 @@ const config: Config = {
         "gray-button": "#1b1b1b",
         "gray-copyright": "#727272",
         "light-1": "#E7E7E7",
+        "author-photo-bg": "#0a0b0d",
       },
       margin: {
         "13": "3.25rem",

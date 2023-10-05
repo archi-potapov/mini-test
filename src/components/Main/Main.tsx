@@ -9,7 +9,7 @@ export const Main = () => {
       className="mb-[202px] w-full max-w-[1828px] px-[46px] max-md:mb-[60px] max-md:px-[10px]"
     >
       <section className="relative flex w-full justify-between overflow-hidden rounded-[0.62rem]">
-        <div className="absolute z-0 flex h-full w-[680px] items-end bg-[#0a0b0d] max-2xl:left-[-50px] max-xl:hidden">
+        <div className="bg-author-photo-bg absolute z-0 flex h-full w-[680px] items-end max-2xl:left-[-50px] max-xl:hidden">
           <Image
             src="/images/authorPhoto.png"
             alt="Author Photo"
