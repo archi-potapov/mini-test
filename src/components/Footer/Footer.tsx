@@ -11,14 +11,14 @@ export const Footer = () => {
         <div className="border-gray-border h-1.5 w-full rounded-[0_0_2px_2px] border border-t-transparent"></div>
       </div>
       <div className="flex justify-between max-md:flex-col max-md:gap-[3.375rem]">
-        <div className="flex gap-14 text-[36px] tracking-[-0.01em] max-md:flex-col max-md:gap-5 max-md:text-[17px] max-xl:flex-col">
+        <div className="flex gap-14 text-[36px] tracking-[-0.01em] max-xl:flex-col max-md:flex-col max-md:gap-5 max-md:text-[17px]">
           <a href="/" className="hidden text-[15px] max-md:inline">
             Karanikola.<span className="text-gray-selection-1">Studio</span>
           </a>
           <a href="tel:+7 978 76-52-980">+7 978 76-52-980</a>
           <a href="/">Работы студии</a>
         </div>
-        <div className="flex gap-1.5 h-fit">
+        <div className="flex h-fit gap-1.5">
           <a
             href="/"
             target="_blank"

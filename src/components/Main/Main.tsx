@@ -18,7 +18,7 @@ export const Main = () => {
           />
         </div>
         <div className="flex w-auto grow flex-col gap-[112px] p-[142px_56px] max-md:gap-[20px] max-md:p-[40px_15px]">
-          <h2 className="max-w-[808px] text-[36px] leading-[1em] tracking-[-0.01em] text-black max-md:text-[21px] max-lg:max-w-[87%]">
+          <h2 className="max-w-[808px] text-[36px] leading-[1em] tracking-[-0.01em] text-black max-lg:max-w-[87%] max-md:text-[21px]">
             Если у вас есть{" "}
             <span className="text-gray-selection">
               общий запрос или запрос по проекту, пожалуйста, напишите мне
