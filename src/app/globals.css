@@ -4,18 +4,8 @@
 
 @font-face {
   font-family: "TS-Regular";
-  src: url(./../fonts/TildaSans-Regular.ttf);
+  src: url(./../fonts/TildaSans-Regular.woff2);
   font-weight: 400;
-}
-@font-face {
-  font-family: "TS-Bold";
-  src: url(./../fonts/TildaSans-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "TS-Medium";
-  src: url(./../fonts/TildaSans-Medium.ttf);
-  font-weight: 500;
 }
 
 html {
