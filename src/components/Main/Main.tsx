@@ -32,7 +32,7 @@ export const Main = () => {
             className="flex flex-col gap-[56px] text-black max-md:gap-[10px]"
           >
             <div className="flex w-full justify-between gap-[10px] max-md:flex-col max-md:gap-[10px]">
-              <Input type="name" />
+              <Input type="text" placeholder="Стас Васильев" />
               <Input type="tel" />
             </div>
             <button className="h-[78px] w-full rounded-[10px] bg-black p-[12px_16px] text-[21px] leading-[1em] tracking-[-0.21px] text-white max-md:h-[58px] max-md:text-[14px] max-md:tracking-[-0.14px]">
