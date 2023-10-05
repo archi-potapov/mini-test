@@ -20,10 +20,11 @@ const config: Config = {
         "gray-border": "#505050",
         "gray-button": "#1b1b1b",
         "gray-copyright": "#727272",
+        "light-1": "#E7E7E7",
       },
       margin: {
-        '13': '3.25rem',
-      }
+        "13": "3.25rem",
+      },
     },
     borderWidth: {
       DEFAULT: "1px",

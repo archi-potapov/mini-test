@@ -8,8 +8,8 @@ export const Main = () => {
       id={"main"}
       className="mb-[202px] w-full max-w-[1828px] px-[46px] max-md:mb-[60px] max-md:px-[10px]"
     >
-      <section className="flex w-full justify-between overflow-hidden rounded-[10px] bg-[#E7E7E7]">
-        <div className="flex w-[680px] items-end bg-[#0a0b0d] max-xl:hidden">
+      <section className="relative flex w-full justify-between overflow-hidden rounded-[0.62rem]">
+        <div className="absolute z-0 flex h-full w-[680px] items-end bg-[#0a0b0d] max-2xl:left-[-50px] max-xl:hidden">
           <Image
             src="/images/authorPhoto.png"
             alt="Author Photo"
@@ -17,8 +17,8 @@ export const Main = () => {
             height={687}
           />
         </div>
-        <div className="flex w-auto grow flex-col gap-[112px] p-[142px_56px] max-md:gap-[20px] max-md:p-[40px_15px]">
-          <h2 className="max-w-[808px] text-[36px] leading-[1em] tracking-[-0.01em] text-black max-lg:max-w-[87%] max-md:text-[21px]">
+        <div className="bg-light-1 relative ml-auto flex w-auto grow flex-col gap-[112px] p-[142px_56px] max-md:gap-[20px] max-md:p-[40px_15px] xl:max-w-[62.9%]">
+          <h2 className="text-[36px] leading-[1em] tracking-[-0.01em] text-black max-lg:max-w-[87%] max-md:text-[21px]">
             Если у вас есть{" "}
             <span className="text-gray-selection">
               общий запрос или запрос по проекту, пожалуйста, напишите мне
