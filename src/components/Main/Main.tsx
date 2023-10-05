@@ -26,7 +26,7 @@ export const Main = () => {
             по электронной почте или заполните форму — доступна сейчас.
           </h2>
           <form
-            action=""
+            action="#"
             name="application form"
             autoComplete="on"
             className="flex flex-col gap-[56px] text-black max-md:gap-[10px]"
