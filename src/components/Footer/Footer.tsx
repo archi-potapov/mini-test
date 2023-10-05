@@ -15,7 +15,7 @@ export const Footer = () => {
           <a href="/" className="hidden text-[15px] max-md:inline">
             Karanikola.<span className="text-gray-selection-1">Studio</span>
           </a>
-          <a href="tel:+7 978 76-52-980">+7 978 76-52-980</a>
+          <a href="tel:+79787652980">+7 978 76-52-980</a>
           <a href="/">Работы студии</a>
         </div>
         <div className="flex h-fit gap-1.5">
