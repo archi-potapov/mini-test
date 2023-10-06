@@ -22,7 +22,7 @@ export const Input = (params: IParams) => {
           onChange={(event) => setPhoneNumber(String(event.target.value))}
           mask={params.mask || "+7 999 999 - 99 - 99"}
           placeholder={params.placeholder || "+7 ___ ___ - __ - __"}
-          className="border-gray-input h-[78px] w-full grow text-ellipsis rounded-[10px] border border-solid bg-transparent p-[12px_16px] text-[21px] leading-[1em] tracking-[-0.21px] outline-none placeholder:text-black focus:border-black focus:outline-none max-lg:h-[58px] max-lg:text-[14px] max-lg:tracking-[-0.14px]"
+          className="border-gray-input h-[3.7em] w-full grow text-ellipsis rounded-[10px] border border-solid bg-transparent px-4 text-[21px] leading-[1em] tracking-[-0.01em] outline-none placeholder:text-black focus:border-black focus:outline-none max-md:h-[4.14em] max-md:text-[14px]"
         />
       );
     case "text":
@@ -31,7 +31,7 @@ export const Input = (params: IParams) => {
           type={params.type}
           placeholder={params.placeholder || ""}
           maxLength={32}
-          className="border-gray-input h-[78px] w-full grow text-ellipsis rounded-[10px] border border-solid bg-transparent p-[12px_16px] text-[21px] leading-[1em] tracking-[-0.21px] outline-none placeholder:text-black focus:border-black focus:outline-none max-lg:h-[58px] max-lg:text-[14px] max-lg:tracking-[-0.14px]"
+          className="border-gray-input h-[3.7em] w-full grow text-ellipsis rounded-[10px] border border-solid bg-transparent px-4 text-[21px] leading-[1em] tracking-[-0.01em] outline-none placeholder:text-black focus:border-black focus:outline-none max-md:h-[4.14em] max-md:text-[14px]"
         />
       );
   }
